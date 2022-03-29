@@ -1,9 +1,9 @@
 import React from 'react'
-import cssModules from '../components/Login.module.css'
+import cssModules from '../components/Register.module.css'
 import logoDumbmerch from '../components/assets/Frame.png'
 import { Link } from 'react-router-dom';
 
-function Login() {
+function Register() {
     return (
         <div className={cssModules.mainContainer}>
 
@@ -23,8 +23,9 @@ function Login() {
 
                 <div className={cssModules.rightSide}>
                     <div className={cssModules.rightContainer}>
-                        <h2>Login</h2>
+                        <h2>Register</h2>
                         <form>
+                            <input type="text" id='name' name='name' placeholder='Name' />
                             <input type="email" id='email' name='email' placeholder='Email' />
                             <input type="password" id='password' name='password' placeholder='Password' />
                             <button>Login</button>
@@ -40,4 +41,4 @@ function Login() {
     )
 }
 
-export default Login;
+export default Register;
