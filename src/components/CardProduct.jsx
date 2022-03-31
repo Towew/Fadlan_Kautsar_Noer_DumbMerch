@@ -37,7 +37,7 @@ function CardProduct() {
                 Dummyproduct.map((product) => (
                     <div style={styles.cardContainer}>
                         <img style={styles.img} src={product.img} alt='' />
-                        <h6 style={styles.title}>{product.title}</h6>
+                        <Link to="/detail-product"><h6 style={styles.title}>{product.title}</h6></Link>
                         <p style={styles.p}>Rp.{product.price}</p>
                         <p style={styles.p}>Stock : {product.stock}</p>
                     </div>
