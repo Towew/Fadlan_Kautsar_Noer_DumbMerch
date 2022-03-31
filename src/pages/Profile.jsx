@@ -9,7 +9,7 @@ import Navigation from '../components/Navigation.jsx';
 function Profile() {
     return (
 
-        <div>
+        <div className={cssModule.ProfileC}>
 
             <Navigation />
 

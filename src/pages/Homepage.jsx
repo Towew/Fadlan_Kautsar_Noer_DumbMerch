@@ -14,8 +14,7 @@ function Homepage() {
             <div className={cssModules.homepagePageContainer}>
                 <h5>Product</h5>
                 <div className={cssModules.homepageCardContainer}>
-                    <CardProduct img={Mouse} title="Mouse" price="500.000" stock="600" />
-                    <CardProduct img={Keyboard} title="Keyboard" price="700.000" stock="600" />
+                    <CardProduct />
                 </div>
             </div>
         </div>

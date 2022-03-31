@@ -48,7 +48,7 @@ body {
     text-align: justify;
 }
 
-h6 {
+.h6price {
     text-align: end;
     font-size: 24px;
     color: #F74D4D;
@@ -60,4 +60,5 @@ h6 {
     background: #F74D4D;
     border-radius: 5px;
     margin-top: 30px;
+    color:#fff;
 }

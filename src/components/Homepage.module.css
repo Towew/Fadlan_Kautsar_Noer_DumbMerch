@@ -10,3 +10,8 @@ h5 {
 .homepageCardContainer {
     display: flex;
 }
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}

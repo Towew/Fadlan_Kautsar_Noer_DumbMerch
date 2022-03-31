@@ -5,7 +5,7 @@ import cssModule from '../components/EditProduct.module.css';
 
 function EditProduct() {
     return (
-        <div>
+        <div className={cssModule.ProductC}>
             <Navigation />
             <div>
                 <div className={cssModule.containerProduct}>

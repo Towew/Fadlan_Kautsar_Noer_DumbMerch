@@ -1,9 +1,16 @@
 import React from 'react'
 import cssModules from '../components/Login.module.css'
 import logoDumbmerch from '../components/assets/Frame.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
+
+    const navigate = useNavigate();
+
+    const handleNavigateToHomepage = () => {
+        navigate("/homepage");
+    };
+
     return (
         <div className={cssModules.mainContainer}>
 
@@ -27,7 +34,7 @@ function Login() {
                         <form>
                             <input type="email" id='email' name='email' placeholder='Email' />
                             <input type="password" id='password' name='password' placeholder='Password' />
-                            <button>Login</button>
+                            <button onClick={handleNavigateToHomepage}>Login</button>
                         </form>
                     </div>
                 </div>

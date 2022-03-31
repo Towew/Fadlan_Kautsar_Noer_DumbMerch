@@ -5,7 +5,7 @@ import cssModules from '../components/EditCategory.module.css'
 
 function EditCategory() {
     return (
-        <div>
+        <div className={cssModules.CategoryC}>
             <Navigation />
             <div>
                 <div className={cssModules.containerCategory}>

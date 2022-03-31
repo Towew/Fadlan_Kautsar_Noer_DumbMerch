@@ -1,11 +1,15 @@
 import React from 'react'
+import Dummyproduct from './Dummyproduct.jsx'
+import Mouse from './assets/Mouse.png'
+import Keyboard from './assets/Keyboard.png'
+import { Link } from 'react-router-dom'
 
 const styles = {
     cardContainer: {
         width: '241px',
         height: '410px',
         backgroundColor: '#212121',
-        marginRight: '10px'
+        marginRight: '10px',
     },
     img: {
         width: '241px',
@@ -26,13 +30,19 @@ const styles = {
     }
 }
 
-function CardProduct(props) {
+function CardProduct() {
     return (
-        <div style={styles.cardContainer} className="cardProductContainer">
-            <img style={styles.img} src={props.img} alt='' />
-            <h6 style={styles.title}>{props.title}</h6>
-            <p style={styles.p}>Rp.{props.price}</p>
-            <p style={styles.p}>Stock : {props.stock}</p>
+        <div style={{ display: 'flex', }}>
+            {
+                Dummyproduct.map((product) => (
+                    <div style={styles.cardContainer}>
+                        <img style={styles.img} src={product.img} alt='' />
+                        <h6 style={styles.title}>{product.title}</h6>
+                        <p style={styles.p}>Rp.{product.price}</p>
+                        <p style={styles.p}>Stock : {product.stock}</p>
+                    </div>
+                ))
+            }
         </div>
     )
 }

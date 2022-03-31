@@ -1,9 +1,16 @@
 import React from 'react'
 import cssModules from '../components/Register.module.css'
 import logoDumbmerch from '../components/assets/Frame.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Register() {
+
+    const navigate = useNavigate();
+
+    const handleNavigateToLogin = () => {
+        navigate("/login");
+    };
+
     return (
         <div className={cssModules.mainContainer}>
 
@@ -28,7 +35,7 @@ function Register() {
                             <input type="text" id='name' name='name' placeholder='Name' />
                             <input type="email" id='email' name='email' placeholder='Email' />
                             <input type="password" id='password' name='password' placeholder='Password' />
-                            <button>Login</button>
+                            <button onClick={handleNavigateToLogin} >Login</button>
                         </form>
                     </div>
                 </div>

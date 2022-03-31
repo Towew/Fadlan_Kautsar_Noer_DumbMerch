@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ProductC nav li:nth-of-type(4) a {
+    color: #F74D4D;
+}
+
+.mainContainer {
+    width: 1250px;
+    height: 500px;
+}
+
+h4 {
+    color: white;
+}
+
+.btnGroup {
+    display: flex;
+    align-items: center;
+}
+
+.btnGroup div button {
+    width: 135px;
+    height: 40px;
+    margin: 5px 15px 5px 15px;
+    color: white;
+}
+
+.btnEdit {
+    background-color: #56C05A;
+    border-radius: 5px;
+    border: 1px solid #56C05A;
+}
+
+.btnDelete {
+    background-color: #F74D4D;
+    border-radius: 5px;
+    border: 1px solid #F74D4D;
+}

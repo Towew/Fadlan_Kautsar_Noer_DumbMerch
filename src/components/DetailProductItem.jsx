@@ -18,7 +18,7 @@ function DetailProductItem(props) {
                         -{props.spec4} <br />
                         -{props.spec5}</p>
                     <p className='desc'>{props.description}</p>
-                    <h6>Rp.{props.price}</h6>
+                    <h6 className={cssModules.h6price}>Rp.{props.price}</h6>
                     <button>Buy</button>
                 </div>
             </div>

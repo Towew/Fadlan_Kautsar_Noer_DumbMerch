@@ -20,6 +20,10 @@ body {
     font-family: Avenir;
 }
 
+.ProductC nav li:nth-of-type(4) a {
+    color: #F74D4D;
+}
+
 .containerProduct {
     color: white;
 }
@@ -58,6 +62,10 @@ body {
         justify-content: center;
     }
 
+    .containerProduct input::placeholder {
+        color: #FFFFFF;
+    }
+
     .containerProduct .textarea {
         width: 90%;
         height: 80px;
@@ -69,6 +77,10 @@ body {
         padding-left: 10px;
         resize: none;
         height: 130px;
+    }
+
+    .containerProduct textarea::placeholder{
+        color: #FFFFFF;
     }
 
     .containerProduct .category {
