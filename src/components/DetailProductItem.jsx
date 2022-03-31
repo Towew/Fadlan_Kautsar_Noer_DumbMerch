@@ -1,8 +1,15 @@
 import React from 'react'
 import cssModules from '../components/DetailProduct.module.css'
-
+import { useNavigate } from 'react-router-dom';
 
 function DetailProductItem(props) {
+
+    const navigate = useNavigate();
+
+    const handleNavigateToHomepage = () => {
+        navigate("/homepage");
+    };
+
     return (
         <div>
             <div className={cssModules.detailProductItemContainer}>
@@ -19,7 +26,7 @@ function DetailProductItem(props) {
                         -{props.spec5}</p>
                     <p className='desc'>{props.description}</p>
                     <h6 className={cssModules.h6price}>Rp.{props.price}</h6>
-                    <button>Buy</button>
+                    <button onClick={handleNavigateToHomepage}>Buy</button>
                 </div>
             </div>
         </div>
